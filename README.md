@@ -199,6 +199,56 @@ npm test -- --watch        # Watch mode
 - [ ] DAO governance
 - [ ] Cross-chain interoperability
 
+## 📦 Project Structure
+
+```
+nexum-ledger/
+├── src/
+│   ├── crypto/
+│   │   └── KeyManager.ts (87 lines)
+│   ├── core/
+│   │   ├── ReputationLedger.ts (221 lines)
+│   │   ├── TransactionPool.ts (215 lines)
+│   │   ├── SmartContract.ts (168 lines)
+│   │   ├── OracleAttestation.ts (163 lines)
+│   │   ├── ProtocolManager.ts (185 lines)
+│   │   └── ReputationLedger.test.ts (171 lines)
+│   ├── types.ts (118 lines)
+│   └── index.ts (191 lines)
+├── package.json
+├── tsconfig.json
+├── jest.config.js
+├── .gitignore
+└── README.md
+```
+
+## 🔧 Installation & Development
+
+### Prerequisites
+- Node.js 16+
+- npm or yarn
+
+### Setup
+```bash
+# Install dependencies
+npm install
+
+# Run development demo
+npm run dev
+
+# Run all tests
+npm test
+
+# Build for production
+npm run build
+
+# Lint code
+npm run lint
+
+# Format code
+npm run format
+```
+
 ## 📝 License
 
 MIT
@@ -207,6 +257,21 @@ MIT
 
 Contributions welcome! Please open an issue or submit a pull request.
 
+### Contributing Guidelines
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📞 Support
+
+For issues, questions, or suggestions, please open a GitHub issue.
+
 ---
 
 **Built with privacy-first architecture for the cypherpunk movement** 🔒
+
+**Version:** 2.0.0 (Lite MVP)
+**Last Updated:** 2026-05-27
+**Status:** Active Development
